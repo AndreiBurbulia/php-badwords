@@ -19,11 +19,23 @@ $nuovo_paragrafo = str_replace($prova, '***', $paragrafo);
     <title>PHP BadWords</title>
 </head>
 <body>
-    <h1>Funzia</h1>
+    <h1>Paragrafi</h1>
+    <hr>
+    <br><br>
+
     <p> <?php echo $paragrafo;?> </p>
     <p>La lunghezza del paragrafo è : <?php echo $lunghezza_paragrafo;?> caratteri</p>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+
+    <p>Per censurare una parola digitare "?parola=parola da censurare"</p>
     <p>Parola da censurare: <?php echo $prova ?></p>
     <p>Nuovo Paragrafo censurato:</p>
     <p><?php echo $nuovo_paragrafo?></p>
+    <p>La lunghezza del nuovo paragrafo censurato è : <?php echo strlen($nuovo_paragrafo);?> caratteri</p>
+
 </body>
 </html>
